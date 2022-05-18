@@ -7,19 +7,13 @@
     <script type="text/javascript" src="../Static/Scripts/index.js">
     </script>
     <script>
-        //checkAge();
-        handleSession();
-        sessionLog();
-        const inputParseFunction = () => {
+        // обработка сессии
+        handleSession(logger/* Коллбек-функции */, checker);
+
+        // функция для получения пользовательского ввода
+        const inputParseFunction = function () {
             return document.getElementsByTagName('input')[0].value.toLowerCase();
         }
-        /*
-        * Всплывающее окно будет показано по таймауту
-        * 
-        * */
-        setTimeout(() =>
-            alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
-            30000);
     </script>
 </head>
 <body">
